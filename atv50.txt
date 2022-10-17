@@ -1,0 +1,12 @@
+
+A normalização de dados
+
+Processo onde se aplicam regras a todas as tabelas do banco de dados e tem como objetivo de evitar falhas no projeto e para isso faz-se necessário a aplicação das técnicas e regras de normalização para garantir um banco de dados mais íntegro e sem insconsistências.
+
+Existem 3 formas normais mais conhecidas:
+
+1FN - 1ª Forma Normal:todos os atributos de uma tabela devem ser atômicos, não deve conter grupos repetidos e nem atributos com mais de um valor, é preciso identificar a chave primária da tabela, a (s) coluna(s) que tem(êm) dados repetidos e removê-la(s), criar uma nova tabela com a chave primária para armazenar o dado repetido e, por fim, criar uma relação entre a tabela principal e a tabela secundária. 
+
+2FN - 2ª Forma Normal: Para estar na 2FN é preciso estar na 1FN, todos os atributos não chaves da tabela devem depender unicamente da chave primária (não podendo depender apenas de parte dela). Para deixar na segunda forma normal, é preciso identificar as colunas que não são funcionalmente dependentes da chave primária da tabela e, em seguida, remover essa coluna da tabela principal e criar uma nova tabela com esses dados.
+
+3FN - 3ª Forma Normal: É preciso estar na 2FN, os atributos não chave de uma tabela devem ser mutuamente independentes e dependentes unicamente e exclusivamente da chave primária (um atributo B é funcionalmente dependente de A se, e somente se, para cada valor de A só existe um valor de B). Para atingir essa forma normal, é preciso identificar as colunas que são funcionalmente dependentes das outras colunas não chave e extraí-las para outra tabela.
